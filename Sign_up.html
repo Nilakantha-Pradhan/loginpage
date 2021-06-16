@@ -5,61 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1 style="color: red ;">Sign Up</h1>
+      <div class="neu"
+        <h1 style="color: red ;"><b>Sign Up</b></h1>
         <p>Please fill in this form to create an account.</p>
-        <hr>
-        <label for="fname">*First name:</label>
+      
+        <label for="fname"><b>*First name: </b></label>
         <input required type="text" id="fname" name="fname"><br><br>
 
-        <label for="lname">*Last name:</label>
+        <label for="lname"><b>*Last name:</b></label>
         <input type="text" id="lname" name="lname"><br><br>
         
-        <label> Mobile no. </label><br>
-        <input type="text" name="Mobile"><br><br>
+        <label for=" Mobile" ><b>*Mobile no.</b> </label>
+        <input type="text" id="Mobile" name="Mobile"><br><br>
         
-        <label for="email"><b>Email</b></label>
+        <label for="email"><b>*Email</b></label>
         <input type="text" placeholder="XYZ@gmail.com" name="email" required><br><br>
     
-        <label for="psw"><b>Password</b></label>
+        <label for="psw"><b>*Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required><br><br>
     
-        <label for="psw-confirm"><b>Confirm Password</b></label>
+        <label for="psw-confirm"><b>*Confirm Password</b></label>
         <input type="password" placeholder="Confirm Password" name="psw-Confirm" required><br><br>
+
+        <select>
+          <option style="color: rgb(165, 164, 164);"><b>Course</b></option>
+          <option value="B.Tech"> B.Tech</option>
+          <option value="M.Tech "> M.Tech </option>
+          <option value="BCA"> BCA</option>
+          <option value="MBA "> MBA </option>
+    </select>
         
-        <p> Select your gender </p>
+        <p>* Select your gender * </p>
         <input type="radio" name="gender">Male
         <input type="radio" name="gender">Female 
-        <input type="radio" name="gender">Others<br><br>
+        <input type="radio" name="gender">Others<br>
 
         <p> <b>Mark <mark>Centurian student</mark> or not!</b> </p>
         <input type="radio" name="Centurian student">Yes
         <input type="radio" name="Centurian student">No <br><br>
-        
-         <p>
-           
-            <legend> Academic year if studying :*</legend>
-            <input type="radio" name="rdo" value="1st year" required>1st year<br>  
-            <input type="radio" name="rdo" value="2nd year" required>2nd year<br>  
-            <input type="radio" name="rdo" value="3rd year" required>3rd year<br>  
-            <input type="radio" name="rdo" value="4th year" required>4th year<br>
-          
-            </p>
-    <br><br>
 
+        <select>
+          <option style="color: rgb(190, 189, 188);">*Academic year if studying</option>
+          <option value="1st year"> 1st year </option>
+          <option value="2nd year"> 2nd year </option>
+          <option value="3rd year">  3rd year</option>
+          <option value="4th year">  4th year</option>
+    </select>
+            
         <p>Please read all the instruction carefully</p>
-        <input type="checkbox" name=""> Yes,I read it all.<br><br>
-    
-        
-    
-        <div class="btn">
+        <input type="checkbox" name=""> Yes,I read it all.
+
+          <div class="btn"><br>
           <button type="button" class="cancelbtn">Cancel</button>
           <button type="submit" class="signupbtn">Sign Up</button>
         </div>
+      </div>
       </div>
     </form>
 
 </body>
 </html>
+
