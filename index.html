@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project managment system</title>
+    <link rel="stylesheet" href="chin.css">
+    <style>
+        hr {
+            border-style: none;
+            border-top-style: dotted;
+            border-color: rgb(221, 14, 14);
+            border-width: 4px;
+            width: 40%;
+        }
+
+        body {
+            /* background-image: url('centt.png'); */
+            background-repeat: no-repeat;
+            background-size: 1600px 700px;
+        }
+
+        @media screen and (min-width: 380px) {
+            body {
+                background-color: lightgreen;
+                /* background-image: url('centt.png'); */
+
+            }
+
+
+        }
+
+        @media screen and (min-width: 800px) {
+            body {
+                /* background-color: lavender; */
+                background-image: url('centt.png');
+            }
+
+            .h1header {
+                text-align: center;
+            }
+
+
+
+
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="row" style="margin-left:20%">
+            <div class="desktop">
+                <h1 class="h1header">PROJECT MANAGMENT</h1>
+            </div>
+
+
+
+        </div>
+
+
+
+        </div>
+
+        <div>
+            <div class="sidebar">
+                <div class="logo-details">
+
+                    <img src="logo.png" height=50px width=50px class="header" background-color=black>
+                    <div class="logo_name">project managment</div>
+                    <i class='bx bx-menu' id="btn"></i>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Search...">
+                        <span class="tooltip">Search</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-user-circle'></i>
+                            <span class="links_name">profile</span>
+                        </a>
+                        <span class="tooltip">Profile</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-task'></i>
+                            <span class="links_name">give task</span>
+                        </a>
+                        <span class="tooltip">give Task</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-add-to-queue'></i>
+                            <span class="links_name">Add Project</span>
+                        </a>
+                        <span class="tooltip">Add Proje</span>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt-2'></i>
+                            <span class="links_name">Analytics</span>
+                        </a>
+                        <span class="tooltip">Analytics</span>
+                    </li> -->
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-user-plus'></i>
+                            <span class="links_name">cotribute</span>
+                        </a>
+                        <span class="tooltip">contribute</span>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-info-circle'></i>
+                            <span class="links_name">Details of project</span>
+                        </a>
+                        <span class="tooltip">Details of project</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-contact'></i>
+                            <span class="links_name">contact</span>
+                        </a>
+                        <span class="tooltip">contact</span>
+                    </li>
+
+            </div>
+        </div>
+
+        </ul>
+        </div>
+        <!-- <section class="home-section"> -->
+        <!-- <img src="logo.png" height=50px width=50px class="header" background-color=black> -->
+        <!-- <div class="text">CENTURION PROJECT MANAGMENT SYSTEM</div>
+        </section> -->
+        <script>
+            let sidebar = document.querySelector(".sidebar");
+            let closeBtn = document.querySelector("#btn");
+            let searchBtn = document.querySelector(".bx-search");
+
+            closeBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("open");
+                menuBtnChange();//calling the function(optional)
+            });
+
+            searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+                sidebar.classList.toggle("open");
+                menuBtnChange(); //calling the function(optional)
+            });
+
+            // following are the code to change sidebar button(optional)
+            function menuBtnChange() {
+                if (sidebar.classList.contains("open")) {
+                    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+                } else {
+                    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+                }
+            }
+        </script>
+    </header>
+
+
+
+    <!-- <img src="logo.png" height=70px width=70px class="header">
+            <h1 class="header">Project Managment</h1>
+            <hr>
+            <a href="google.com" class="header">
+                <h1>my profile</h1>
+            </a>
+            <a href="google.om" class="header">
+                <h1>home</h1>
+            </a>
+            <a href="contact.html" class="header">
+                <h1>contact</h1>
+            </a>
+            <hr>
+            <div>
+                <input class="header" type="text" placeholder="Search..">
+                <button type="search">go</button>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <h1>welcome to our website</h1>
+        <p>my name is xyz.<br>
+            im frm centurion
+        </p>
+    </main> -->
+    <!-- <nav>
+    </nav>
+    <main>
+        <div>
+            <div class="first">
+                <div class="firstbaby"><button><a href="newproj.html">new project</a></button></div>
+                <hr>
+                <div class="firstbaby"><button>my projects</button></div>
+                <hr>
+            </div>
+            <div class="first">
+                <div class="secondbaby"><button>contribute</button></div>
+                <hr>
+                <div class="secondbaby"><button>view</button></div>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+ -->
+
+
+
+</body>
+
+</html>
